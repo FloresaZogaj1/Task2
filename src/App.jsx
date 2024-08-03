@@ -1,11 +1,8 @@
-// src/App.jsx
 import React, { useState } from 'react';
 import Tab from './components/Tab';
 import Card from './components/Card';
-
 const App = () => {
   const [activeTab, setActiveTab] = useState('Domains');
-
   const tabs = [
     'Domains',
     'Web Hosting',
@@ -16,7 +13,6 @@ const App = () => {
     'VPS Hosting Servers',
     'Free Hosting',
   ];
-
   const cardsData = {
     Domains: [
       { title: '.COM', price: '$5.99/yr', discountPrice: 'Instead of $10.99/yr' },
@@ -57,10 +53,9 @@ const App = () => {
       { title: 'Free Plan', price: '$0.00/mo', discountPrice: 'No Discount' },
     ],
   };
-
   return (
     <div className="p-4">
-      <div className="flex justify-center space-x-4 mb-8">
+      <div className="flex flex-wrap justify-center space-x-2 mb-8 overflow-x-auto">
         {tabs.map((tab) => (
           <Tab
             key={tab}
@@ -82,5 +77,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;

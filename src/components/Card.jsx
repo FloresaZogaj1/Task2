@@ -1,14 +1,16 @@
 import React from 'react';
 
 const Card = ({ title, price, discountPrice }) => (
-  <div className="border rounded-lg shadow-md p-4 text-center">
-    <h2 className="text-2xl font-#fefefe mb-5">{title}</h2>
-    <p className="text-2xl font-#F5F9FE mb-2">{price}</p>
-    <p className="text-xl text-gray-500">{discountPrice}</p>
-    <button className="bg-white text-blue-500 border-blue-500 w-64 h-10" style={{ borderBottomWidth: '2px', borderTopWidth: '1px', borderLeftWidth: '1px', borderRightWidth: '1px', borderStyle: 'solid' }}>
-  Buy Now
-</button>
-    </div>
+  <div className="card border rounded-lg shadow-lg p-6 flex flex-col justify-between items-center h-70 m-4 bg-white">
+    <h2 className="text-2xl font-bold text-gray-800 mb-4">{title}</h2>
+    <p className="text-2xl font-semibold text-black mb-1">{price}</p> 
+    <p className="text-xl text-gray-500 mb-8">{discountPrice}</p> 
+    <button
+      className="text-blue-500 border border-blue-500 px-6 py-2 rounded-md shadow hover:bg-blue-500 hover:text-white transition duration-300"
+    >
+      Buy Now
+    </button>
+  </div>
 );
 
 export default Card;
