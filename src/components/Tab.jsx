@@ -1,12 +1,15 @@
 import React from 'react';
+import { Tab } from 'react-tabs';
 
-const Tab = ({ label, isActive, onClick }) => (
-  <button
-    className={`p-2 ${isActive ? 'text-blue-500 border-b-2 border-blue-500' : 'text-gray-500'}`}
-    onClick={onClick}
+const TabComponent = ({ label }) => (
+  <Tab
+    className="p-2 text-gray-500 cursor-pointer transition duration-300 ease-in-out"
+    selectedClassName="text-blue-500 border-b-2 border-blue-500"
   >
     {label}
-  </button>
+  </Tab>
 );
 
-export default Tab;
+TabComponent.tabsRole = 'Tab'; 
+
+export default TabComponent;
