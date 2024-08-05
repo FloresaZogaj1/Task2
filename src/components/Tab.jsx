@@ -10,6 +10,6 @@ const TabComponent = ({ label }) => (
   </Tab>
 );
 
-TabComponent.tabsRole = 'Tab'; 
+TabComponent.tabsRole = 'Tab';
 
 export default TabComponent;

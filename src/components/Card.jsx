@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = ({ title, price, discountPrice }) => (
-  <div className="card border rounded-lg shadow-lg p-6 flex flex-col justify-between items-center h-70 m-4 bg-white">
+  <div className="border rounded-lg shadow-lg p-6 flex flex-col justify-between items-center h-70 m-4 bg-white transition-transform duration-200 ease-in-out transform hover:scale-105">
     <h2 className="text-2xl font-bold text-gray-800 mb-4">{title}</h2>
     <p className="text-2xl font-semibold text-black mb-1">{price}</p>
     <p className="text-xl text-gray-500 mb-8">{discountPrice}</p>
