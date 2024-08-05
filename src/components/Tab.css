@@ -39,6 +39,10 @@
   color: white;
   border-bottom-color:blue;
 }
+.tab-selected {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
 
 .grid {
   display: grid;

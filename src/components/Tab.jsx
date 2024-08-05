@@ -4,7 +4,7 @@ import { Tab } from 'react-tabs';
 const TabComponent = ({ label }) => (
   <Tab
     className="p-2 text-gray-500 cursor-pointer transition duration-300 ease-in-out"
-    selectedClassName="text-blue-500 border-b-2 border-blue-500"
+    selectedClassName="tab-selected"
   >
     {label}
   </Tab>
