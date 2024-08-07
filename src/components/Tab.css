@@ -12,6 +12,7 @@
 }
 
 .tab-active {
+  border-bottom: 3px solid  #427cff ;
   background-color: #427cff;
   color: white;
 }
