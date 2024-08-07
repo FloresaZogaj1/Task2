@@ -12,9 +12,10 @@
 }
 
 .tab-active {
-  border-bottom: 3px solid  #427cff ;
-  background-color: #427cff;
-  color: white;
+  border-bottom: 0px solid  #427cff ;
+  background-color:transparent;
+  color: #000;
+  
 }
 
 .p-4 {
