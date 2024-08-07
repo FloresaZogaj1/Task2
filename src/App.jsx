@@ -1,8 +1,9 @@
 import React from 'react';
 import { Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css'; 
-import TabComponent from './components/Tab';
+import TabComponent from './components/Tab'; 
 import Card from './components/Card';
+import './components/Tab.css'; 
 
 const tabs = [
   'Domains',
