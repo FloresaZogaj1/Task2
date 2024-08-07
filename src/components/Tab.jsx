@@ -4,8 +4,8 @@ import './Tab.css';
 
 const TabComponent = ({ label }) => (
   <Tab
-    className="tab" 
-    selectedClassName="tab-active" 
+    className="tab"
+    selectedClassName="tab-active"
   >
     {label}
   </Tab>

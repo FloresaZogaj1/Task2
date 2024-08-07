@@ -1,7 +1,6 @@
 import React from 'react';
-import { Tabs, TabList, TabPanel } from 'react-tabs';
+import { Tabs, TabList, Tab, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css'; 
-import TabComponent from './components/Tab'; 
 import Card from './components/Card';
 import './components/Tab.css'; 
 
@@ -63,7 +62,9 @@ const App = () => {
       <Tabs>
         <TabList className="flex flex-wrap justify-center space-x-2 mb-8 overflow-x-auto">
           {tabs.map((tab, index) => (
-            <TabComponent key={index} label={tab} />
+            <Tab key={index} className="tab" selectedClassName="tab-active">
+              {tab}
+            </Tab>
           ))}
         </TabList>
 

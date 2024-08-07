@@ -1,13 +1,10 @@
-.react-tabs__tab--selected {
-  border-bottom-color: #427cff; 
-}
-
 .tab {
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 5px;
   white-space: nowrap;
   text-align: center;
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .tab:hover {
@@ -16,6 +13,7 @@
 
 .tab-active {
   background-color: #427cff;
+  color: white;
 }
 
 .p-4 {
@@ -34,8 +32,8 @@
   justify-content: center;
 }
 
-.space-x-4 > *:not(:last-child) {
-  margin-right: 1rem;
+.space-x-2 > *:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .grid {
